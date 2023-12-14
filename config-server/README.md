@@ -10,11 +10,12 @@
 
 ![](https://velog.velcdn.com/images/develing1991/post/2174bee7-a4c2-4f62-9530-d6a35db417ad/image.png)
 
-![](https://velog.velcdn.com/images/develing1991/post/7988d53a-e2b5-4209-acae-88b2880c5be2/image.png)
-
-
 - 공개키를 도커의 루트에 복사했기 때문에 키 찾을 경로 루트로 변경
+  ![](https://velog.velcdn.com/images/develing1991/post/7988d53a-e2b5-4209-acae-88b2880c5be2/image.png)
 - local-repo-config의 uri를 로컬에서 github로 변경 private 프로젝트니 username,과 password(토큰) 작성
+  ![](https://velog.velcdn.com/images/develing1991/post/1e5307df-f299-4f4a-8390-9b61b841ef9f/image.png)
+  토큰 발급시 어떤 레포지토리인지 잘확인...
+
 
 ### application-encrypt.yaml
 ```yaml
@@ -33,7 +34,7 @@ spring:
     config:
       server:
         git:
-          #          uri: file:///D:/msa/local-repo-config # http://localhost:8888/common/default
+#          uri: file:///D:/msa/local-repo-config # http://localhost:8888/common/default
           uri: https://github.com/run-2-msa/local-repo-config.git # public은 username, password 필요 없음
           username: Develing1991 # private github일 때 Develing1991
           password: [ token ] # private github일 때 토큰 값
