@@ -33,7 +33,7 @@ spring:
     config:
       server:
         git:
-#          uri: file:///D:/msa/local-repo-config # http://localhost:8888/common/default
+          #          uri: file:///D:/msa/local-repo-config # http://localhost:8888/common/default
           uri: https://github.com/run-2-msa/local-repo-config.git # public은 username, password 필요 없음
           username: Develing1991 # private github일 때 Develing1991
           password: [ token ] # private github일 때 토큰 값
@@ -123,6 +123,12 @@ docker logs config-server
 
 <br><br>
 
+### config 데이터 확인
+
+![](https://velog.velcdn.com/images/develing1991/post/190b0146-b510-40a8-ab44-baf0e8b3c8e6/image.png)
+
+<br><br>
+
 ## 실행 방법 2. docker-compose
 - 저장소 저장 까지는 아니더라도 ** 일단 기본 build해서 이미지가 있어야 함 **
 ### Dockerfile
@@ -192,3 +198,7 @@ docker network inspect suhan-network
 ### 로그 확인
 
 ![](https://velog.velcdn.com/images/develing1991/post/6c27647f-93af-4935-8759-7da7ec5956d1/image.png)
+
+### config 데이터 확인
+
+![](https://velog.velcdn.com/images/develing1991/post/190b0146-b510-40a8-ab44-baf0e8b3c8e6/image.png)
