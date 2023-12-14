@@ -16,6 +16,7 @@ docker run -d --name rabbitmq --network suhan-network -p 15672:15672 -p 5672:567
 version: '3.7'
 services:
   rabbitmq:
+    container_name: rabbitmq
     image: rabbitmq:management
     ports:
       - "5671:5671"
