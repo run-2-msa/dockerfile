@@ -1,4 +1,4 @@
-version: "3"
+version: "3.7"
 services:
   mysql:
     image: mysql:8.0.26
@@ -16,3 +16,9 @@ services:
       - TZ=Asia/Seoul
     volumes:
       - D:\MYSQL:/var/lib/mysql
+    networks:
+      my-network:
+networks:
+  my-network:
+    external: true
+    name: suhan-network
