@@ -56,7 +56,3 @@ networks:
     external: true
     name: suhan-network
 ```
-
-### 접속 확인
-![](https://velog.velcdn.com/images/develing1991/post/1fa2116b-eb81-4548-b759-63415ad1affe/image.png)
-
