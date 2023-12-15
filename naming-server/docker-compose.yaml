@@ -1,0 +1,17 @@
+version: '3.7'
+services:
+  naming-server:
+    container_name: naming-server
+    image: completed0728/naming-server:1.0
+    ports:
+      - "8761:8761"
+    environment:
+      spring.config.import: optional:configserver:http://config-server:8888
+    #    depends_on:
+    #      - config-server
+    networks:
+      my-network:
+networks:
+  my-network:
+    external: true
+    name: suhan-network
