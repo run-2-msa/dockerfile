@@ -149,6 +149,7 @@ services:
       - gateway-service # gateway-service에서 위 세 항목을 모두 달고 있으니까..
     networks:
       my-network:
+    restart: on-failure
 
   order-service:
     container_name: order-service
